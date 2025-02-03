@@ -11,4 +11,9 @@ public class MainController {
     public String index() {
         return "spring boot practice";
     }
+
+    @GetMapping("/")
+    public String root() {
+        return "redirect:/question/list";
+    }
 }

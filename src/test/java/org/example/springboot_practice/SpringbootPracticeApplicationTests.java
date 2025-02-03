@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @SpringBootTest
@@ -17,8 +18,11 @@ class SpringbootPracticeApplicationTests {
     @Autowired
     private QuestionRepository questionRepository;
 
+    @Transactional
     @Test
     void testJpa() {
+
+        
 
         Question q = this.questionRepository.findBySubjectAndContent(
                 "sbb가 무엇인가요?", "sbb에 대해서 알고 싶습니다.");
