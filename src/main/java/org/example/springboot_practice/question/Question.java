@@ -1,4 +1,4 @@
-package org.example.springboot_practice;
+package org.example.springboot_practice.question;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.OneToMany;
@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.example.springboot_practice.answer.Answer;
 
 import java.time.LocalDateTime;
 import java.util.List;

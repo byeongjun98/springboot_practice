@@ -1,4 +1,4 @@
-package org.example.springboot_practice;
+package org.example.springboot_practice.answer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
